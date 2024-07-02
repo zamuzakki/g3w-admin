@@ -101,6 +101,7 @@ urlpatterns += [
         '',
         include('about.urls')
     ),
+
     path(
         'login/',
         G3WLoginView.as_view(
@@ -252,6 +253,7 @@ apiUrlpatterns += [
     path('', include('client.apiurls')),
     path('', include('core.apiurls')),
     path('', include('usersmanage.apiurls')),
+    path('', include('dam_monitor.apiurls')),
     # TODO find out why we cannot include('OWS.apiurls') instead
     path('', include('OWS.urls')),
 ]
